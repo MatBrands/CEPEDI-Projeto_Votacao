@@ -17,9 +17,10 @@ Conteúdo:
 - Cada desenvolvedor terá sua branch para ficar a vontade para inserir novas funcionalidades ao projeto.
 - Ao desenvolver uma nova funcionalidade o dev deverá solicitar o Pull Request comentando o que foi feito.
 - Em relação aos commits será utilizado um padrão
-    - Commits de correção . Ex: git commit -m "Fix: Correção do model"
-    - Commits de nova features. Ex: git commit -m "NewFeature: Controller de usuario"
-    - Commit de remoção de funcionalidade. Ex: git commit -m "Removed: Cálculo do tempo de votação"
+    - Commits de nova features. Ex: git commit -m "New: Controller de usuario"
+    - Commits de correção. Ex: git commit -m "Fix: Correção do model"
+    - Commits de updates. Ex: git commit -m "Update: Readme"
+    - Commit de remoção. Ex: git commit -m "Removed: Cálculo do tempo de votação"
 
 ### Lista de requisitos a ser atendidos
 - [ ] Executar no Console
@@ -55,7 +56,7 @@ Para instalar as dependencias acesse o diretório do ambiente, ative-o e instale
 ```sh
 cd ENV
 bin/activate
-pip install -r requirements.txt
+pip install -r ./dependencies/requirements.txt
 ```
 
 Então apenas chame a main.py normalmente
