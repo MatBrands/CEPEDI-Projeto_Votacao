@@ -1,21 +1,27 @@
 import os
-from screens import index_screens
-from models import UserModel
+from screens.menuClass import *
 
 if __name__ == '__main__':
-    while 1:
-        index_screens.main_screen()
-        option = int(input())
-        os.system('clear')
 
-        if option != 1 and option != 2 and option != 3 or option < 0 or option > 3:
-            print('Opção invalida')
-        if option == 1:
-            os.system('clear')
-            index_screens.login_screen()
-        if option == 2:
-            pass
-        if option == 3:
-            UserModel.users_all()
-            break
-    index_screens.logout_screen()
+    # 
+    menu = Menu()
+    menu.setTitulo(['#############################################\n', 
+    '\tBem Vindo Ao Sistema De Votação\t', 
+    '\n#############################################\n'])
+    menu.setItems(['Entrar', 'Registrar', 'Sair'])
+    # 
+
+    option = menu.iniciarMenu()
+
+    os.system("clear")
+
+    if option == 0:
+        print ('Entrou')
+        pass
+    elif option == 1:
+        print ('Registrou')
+        pass
+    elif option == 2:
+        print ('Saiu')
+        pass
+    
