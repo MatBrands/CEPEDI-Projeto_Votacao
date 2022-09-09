@@ -28,8 +28,8 @@ Conteúdo:
 - [ ] Pelo menos 1 CRUD
 - [ ] Salvar e carregar informações em arquivos JSON
 - [ ] Pelo menos 1 módulo/pacote
-- [ ] Pelo menos 2 classes
-- [ ] Pelo menos 1 herança entre Classes
+- [x] Pelo menos 2 classes
+- [x] Pelo menos 1 herança entre Classes
 
 ## Funcionalidades e responsável
 
@@ -38,6 +38,7 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
 | Criação de menu dinâmico | Matheus Brandão | Conclusão
+| Criação das classes | Matheus Brandão | Conclusão
 | ... | Luca Sacramento | Em desenvolvimento
 | ... | Roberto Goes | Pendente
 
