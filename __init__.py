@@ -17,11 +17,9 @@ if __name__ == '__main__':
 
     if option == 0:
         print ('Entrou')
-        pass
     elif option == 1:
         print ('Registrou')
-        pass
-    elif option == 2:
+    else:
         print ('Saiu')
-        pass
+        exit(1)
     
