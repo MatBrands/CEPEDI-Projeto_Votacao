@@ -23,8 +23,8 @@ Conteúdo:
     - Commits de remoção. Ex: git commit -m "Removed: Cálculo do tempo de votação"
 
 ### Lista de requisitos a ser atendidos
-- [ ] Executar no Console
-- [ ] Pelo menos 1 menu de opções
+- [x] Executar no Console
+- [x] Pelo menos 1 menu de opções
 - [ ] Pelo menos 1 CRUD
 - [ ] Salvar e carregar informações em arquivos JSON
 - [ ] Pelo menos 1 módulo/pacote
