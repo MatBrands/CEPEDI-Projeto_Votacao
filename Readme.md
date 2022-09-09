@@ -1,5 +1,5 @@
 # Projeto Votação em Python
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+![Build Status]()
 
 Este projeto tem como objetivo a conclusão da parte introdutória do curso Python Dados e Web cedido pela CEPEDI.
 Ele consiste num sistema de gerenciamento de votação, onde temos diferentes níveis de acesso (Criador, Candidato e Votante). Apenas o criador da votação poderá encerrar e computar os votos, cada pessoa poderá votar apenas 1 única vez.
@@ -28,8 +28,8 @@ Conteúdo:
 - [ ] Pelo menos 1 CRUD
 - [ ] Salvar e carregar informações em arquivos JSON
 - [ ] Pelo menos 1 módulo/pacote
-- [ ] Pelo menos 2 classes
-- [ ] Pelo menos 1 herança entre Classes
+- [x] Pelo menos 2 classes
+- [x] Pelo menos 1 herança entre Classes
 
 ## Funcionalidades e responsável
 
@@ -38,6 +38,7 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
 | Criação de menu dinâmico | Matheus Brandão | Conclusão
+| Criação das classes | Matheus Brandão | Conclusão
 | ... | Luca Sacramento | Em desenvolvimento
 | ... | Roberto Goes | Pendente
 

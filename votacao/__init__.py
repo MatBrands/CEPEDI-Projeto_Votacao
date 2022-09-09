@@ -1,5 +1,5 @@
 import os
-from screens.menuClass import *
+from interface.menuClass import *
 
 if __name__ == '__main__':
 
