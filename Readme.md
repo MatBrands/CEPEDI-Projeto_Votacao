@@ -45,7 +45,8 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 
 Esse projeto utiliza algumas bibliotecas:
 
-- [Lib_name] - Objetive
+- [termcolor] - Modificar a coloração do console
+- [pynput] - Obter evento de keyboard
 
 ## Instalação
 
@@ -62,7 +63,7 @@ pip install -r ./dependencies/requirements.txt
 Então apenas chame a main.py normalmente
 
 ```sh
-python main.py
+python __init__.py
 ```
 
 ## Autores
