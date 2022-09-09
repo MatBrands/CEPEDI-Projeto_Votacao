@@ -60,7 +60,7 @@ bin/activate
 pip install -r ./dependencies/requirements.txt
 ```
 
-Então apenas chame a main.py normalmente
+Então apenas chame a main normalmente
 
 ```sh
 python __init__.py
