@@ -17,10 +17,10 @@ Conteúdo:
 - Cada desenvolvedor terá sua branch para ficar a vontade para inserir novas funcionalidades ao projeto.
 - Ao desenvolver uma nova funcionalidade o dev deverá solicitar o Pull Request comentando o que foi feito.
 - Em relação aos commits será utilizado um padrão
-    - Commits de nova features. Ex: git commit -m "New: Controller de usuario"
+    - Commits de novas features. Ex: git commit -m "New: Controller de usuario"
     - Commits de correção. Ex: git commit -m "Fix: Correção do model"
     - Commits de updates. Ex: git commit -m "Update: Readme"
-    - Commit de remoção. Ex: git commit -m "Removed: Cálculo do tempo de votação"
+    - Commits de remoção. Ex: git commit -m "Removed: Cálculo do tempo de votação"
 
 ### Lista de requisitos a ser atendidos
 - [ ] Executar no Console
@@ -37,8 +37,8 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
-| ... | Matheus Brandão | Em desenvolvimento
-| ... | Luca Sacramento | Conclusão
+| Criação de menu dinâmico | Matheus Brandão | Conclusão
+| ... | Luca Sacramento | Em desenvolvimento
 | ... | Roberto Goes | Pendente
 
 ## Tecnologias
