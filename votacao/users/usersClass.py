@@ -1,9 +1,11 @@
-class Pessoa:
+class Votante:
     def __init__(self, id: int, user: str, password: str, name: str):
         self.setUser(user)
         self.setPassword(password)
         self.setId(id)
         self.setName(name)
+        self.setVotou(False)
+        
 
     def getUser(self):
         return self.__user__
@@ -23,6 +25,9 @@ class Pessoa:
     def validarPassword(self, passwd: str):
         return (passwd == self.__password__)
 
+    def Votar(self):
+        self.__votou__ = True
+
     @property
     def setUser(self, user):
         self.__user__ = user
@@ -30,14 +35,10 @@ class Pessoa:
     @property
     def setPassword(self, password):
         self.__password__ = password
-
-class Votante(Pessoa):
-    def __init__(self, id: int, user: str, password: str, name: str):
-        super().__init__(id, user, password, name)
-        self.__votou__ = False
-
-    def Votar(self):
-        self.__votou__ = True
+        
+    @property
+    def setVotou(self, votou):
+        self.__votou__ = votou
 
 class Candidato(Votante):
     def __init__(self, id: int, user: str, password: str, name: str, proposta: str):
