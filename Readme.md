@@ -38,9 +38,12 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
 | Criação de menu dinâmico | Matheus Brandão | Conclusão
-| Criação das classes | Matheus Brandão | Conclusão
-| ... | Luca Sacramento | Em desenvolvimento
-| ... | Roberto Goes | Pendente
+| Criação dos usuarios | Matheus Brandão | Conclusão
+| Criação da votação | Matheus Brandão | Conclusão
+| Manipular Json | Luca Sacramento | Em desenvolvimento
+| Construir a main | Luca Sacramento | Em desenvolvimento
+| Inserir login e senha | Roberto Goes | Pendente
+| Inserir criptografia na senha | Roberto Goes | Pendente
 
 ## Tecnologias
 
