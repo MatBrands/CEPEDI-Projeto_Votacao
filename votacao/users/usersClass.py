@@ -5,7 +5,6 @@ class Votante:
         self.setId(id)
         self.setName(name)
         self.setVotou(False)
-        
 
     def getUser(self):
         return self.__user__
@@ -17,7 +16,7 @@ class Votante:
         self.name = name
     
     def getId(self):
-        return id
+        return self.__id__
     
     def setId(self, id):
         self.__id__ = id
@@ -28,15 +27,12 @@ class Votante:
     def Votar(self):
         self.__votou__ = True
 
-    @property
     def setUser(self, user):
         self.__user__ = user
 
-    @property
     def setPassword(self, password):
         self.__password__ = password
         
-    @property
     def setVotou(self, votou):
         self.__votou__ = votou
 
