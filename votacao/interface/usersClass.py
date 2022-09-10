@@ -1,25 +1,36 @@
-class Votante:
+class Eleitor:
     def __init__(self, id: int, user: str, password: str, name: str):
         self.setUser(user)
         self.setPassword(password)
         self.setId(id)
         self.setName(name)
-        self.setVotou(False)
+        self.__votou__ = False
+
+    def setUser(self, user):
+        self.__user__ = user
 
     def getUser(self):
         return self.__user__
 
+    def setName(self, name):
+        self.name = name
+
     def getName(self):
         return self.name
     
-    def setName(self, name):
-        self.name = name
-    
-    def getId(self):
-        return self.__id__
-    
     def setId(self, id):
         self.__id__ = id
+
+    def getId(self):
+        return self.__id__
+
+    def getVotou(self):
+        return self.__votou__
+
+    def setPassword(self, password):
+        self.__password__ = password
+
+# -------------------------------------------
 
     def validarPassword(self, passwd: str):
         return (passwd == self.__password__)
@@ -27,16 +38,7 @@ class Votante:
     def Votar(self):
         self.__votou__ = True
 
-    def setUser(self, user):
-        self.__user__ = user
-
-    def setPassword(self, password):
-        self.__password__ = password
-        
-    def setVotou(self, votou):
-        self.__votou__ = votou
-
-class Candidato(Votante):
+class Candidato(Eleitor):
     def __init__(self, id: int, user: str, password: str, name: str, proposta: str):
         super().__init__(id, user, password, name)
         self.setProposta(proposta)

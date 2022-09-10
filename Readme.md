@@ -38,7 +38,8 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
 | Criação de menu dinâmico | Matheus Brandão | Conclusão
-| Criação das classes | Matheus Brandão | Conclusão
+| Criação dos usuarios | Matheus Brandão | Conclusão
+| Criação da votação | Matheus Brandão | Conclusão
 | ... | Luca Sacramento | Em desenvolvimento
 | ... | Roberto Goes | Pendente
 

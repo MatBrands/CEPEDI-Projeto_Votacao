@@ -1,9 +1,9 @@
 import sys
 sys.path.insert(1, '../')
-from users.usersClass import *
+from interface.usersClass import *
 
 if __name__ == '__main__':
-    user_1 = Votante(1, 'Matheus_Mbr', '123456', 'Matheus Brandão')
+    user_1 = Eleitor(1, 'Matheus_Mbr', '123456', 'Matheus Brandão')
 
     print (user_1.getId(), user_1.getName(), user_1.getUser())
 
