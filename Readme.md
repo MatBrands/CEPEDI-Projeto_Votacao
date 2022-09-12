@@ -28,8 +28,8 @@ Conteúdo:
 - [ ] Pelo menos 1 CRUD
 - [ ] Salvar e carregar informações em arquivos JSON
 - [ ] Pelo menos 1 módulo/pacote
-- [ ] Pelo menos 2 classes
-- [ ] Pelo menos 1 herança entre Classes
+- [x] Pelo menos 2 classes
+- [x] Pelo menos 1 herança entre Classes
 
 ## Funcionalidades e responsável
 
@@ -38,14 +38,19 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Feature | Dev | Progresso
 | ------ | ------ | ------ |
 | Criação de menu dinâmico | Matheus Brandão | Conclusão
-| ... | Luca Sacramento | Em desenvolvimento
-| ... | Roberto Goes | Pendente
+| Criação dos usuarios | Matheus Brandão | Conclusão
+| Criação da votação | Matheus Brandão | Conclusão
+| Manipular Json | Luca Sacramento | Em desenvolvimento
+| Construir a main | Luca Sacramento | Em desenvolvimento
+| Inserir login e senha | Roberto Goes | Pendente
+| Inserir criptografia na senha | Roberto Goes | Pendente
 
 ## Tecnologias
 
 Esse projeto utiliza algumas bibliotecas:
 
-- [Lib_name] - Objetive
+- [termcolor] - Modificar a coloração do console
+- [pynput] - Obter evento de keyboard
 
 ## Instalação
 
@@ -59,10 +64,10 @@ bin/activate
 pip install -r ./dependencies/requirements.txt
 ```
 
-Então apenas chame a main.py normalmente
+Então apenas chame a main normalmente
 
 ```sh
-python main.py
+python __init__.py
 ```
 
 ## Autores

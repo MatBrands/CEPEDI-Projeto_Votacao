@@ -1,0 +1,17 @@
+{
+    "lucasao": {
+        "id": 1,
+        "name": "Luca",
+        "age": 20,
+        "email": "luca@gmail.com",
+        "password": "1234",
+        "role": 0
+    },
+    "Lulonaro": {
+        "name": "Eric",
+        "password": "arteezy321",
+        "email": "ericx2@uesc.br",
+        "age": 20,
+        "role": 1
+    }
+}

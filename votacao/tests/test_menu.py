@@ -1,5 +1,6 @@
-import os
-from screens.menuClass import *
+import sys
+sys.path.insert(1, '../')
+from interface.menuClass import *
 
 if __name__ == '__main__':
 
@@ -8,7 +9,6 @@ if __name__ == '__main__':
     '\tBem Vindo Ao Sistema De Votação\t', 
     '\n#############################################\n'])
     menu.setItems(['Entrar', 'Registrar', 'Sair'])
-    # 
 
     option = menu.iniciarMenu()
 
@@ -16,11 +16,8 @@ if __name__ == '__main__':
 
     if option == 0:
         print ('Entrou')
-        pass
     elif option == 1:
         print ('Registrou')
-        pass
-    elif option == 2:
+    else:
         print ('Saiu')
-        pass
-    
+        exit(1)
