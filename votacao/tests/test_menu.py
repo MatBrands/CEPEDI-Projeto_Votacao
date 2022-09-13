@@ -1,4 +1,5 @@
 import sys
+import os
 sys.path.insert(1, '../')
 from interface.menuClass import *
 
@@ -8,8 +9,6 @@ if __name__ == '__main__':
     '\tBem Vindo Ao Sistema De Votação\t', 
     '\n#############################################\n'])
     menu.setItems(['Entrar', 'Registrar', 'Sair'])
-    # 
-
     option = menu.iniciarMenu()
 
     os.system("clear")
