@@ -25,9 +25,9 @@ Conteúdo:
 ### Lista de requisitos a ser atendidos
 - [x] Executar no Console
 - [x] Pelo menos 1 menu de opções
-- [ ] Pelo menos 1 CRUD
-- [ ] Salvar e carregar informações em arquivos JSON
-- [ ] Pelo menos 1 módulo/pacote
+- [X] Pelo menos 1 CRUD
+- [X] Salvar e carregar informações em arquivos JSON
+- [X] Pelo menos 1 módulo/pacote
 - [x] Pelo menos 2 classes
 - [x] Pelo menos 1 herança entre Classes
 
