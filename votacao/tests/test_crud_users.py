@@ -24,40 +24,45 @@ if __name__ == '__main__':
     }
 
     usuario = {
-            "id": 4,
-            "name": "Dan",
-            "user": "zDarkness",
-            "password": "coxinha123",
-            "email": "dan@uesc.br",
-            "age": 23
+        "id": 4,
+        "user": "zDarkness",
+        "email": "dan@uesc.br",
+        "password": "coxinha123",
+        "name": "Dan",
+        "age": 23,
+        "role": '0'
     }
 
     usuario2 = {
-            "name": "Darley",
-            "user": "zDarkness",
-            "password": "coxinha123",
-            "email": "dan@uesc.br",
-            "age": 20
+        "id": 3,
+        "user": "zDarkness",
+        "email": "dan@uesc.br",
+        "password": "coxinha123",
+        "name": "Darley",
+        "age": 20,
+        "role": '0'
     }
 
     usuario3 = {
-            "name": "Eric",
-            "user": "Lulonaro",
-            "password": "arteezy321",
-            "email": "ericx2@uesc.br",
-            "age": 20
+        "id": 5,
+        "user": "Lulonaro",
+        "email": "ericx2@uesc.br",
+        "password": "arteezy321",
+        "name": "Eric",
+        "age": 20,
+        "role": '0'
     }
 
     path = '../database/database.json'
 
-    print(createUser(path, **usuario3))
+    # print(createUser(path, **usuario3))
 
-    print(createUser(path, **usuario))
+    # print(createUser(path, **usuario))
 
-    print(readUser(path, 'zDarkness'))
+    # print(readUser(path, 1))
 
-    print(deleteUser(path, 'zDarkness'))
+    # print(deleteUser(path, 'zDarkness'))
 
-    print(updateUser(path, **usuario2))
+    # print(updateUser(path, **usuario2))
 
-    print(deleteUser(path, 'zDarkness'))
+    print(deleteUser(path, 1))

@@ -1,17 +1,19 @@
 {
-    "lucasao": {
-        "id": 1,
+    "1": {
+        "user": "lucasao",
         "name": "Luca",
         "age": 20,
         "email": "luca@gmail.com",
         "password": "1234",
         "role": 0
     },
-    "Lulonaro": {
+    "2": {
+        "user": "Lulonaro",
         "name": "Eric",
         "password": "arteezy321",
         "email": "ericx2@uesc.br",
         "age": 20,
+        "proposta": "Bolsa Pinga",
         "role": 1
     }
 }
