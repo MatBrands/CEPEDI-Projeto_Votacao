@@ -1,9 +1,8 @@
-from doctest import testfile
+import sys
+sys.path.insert(1, '../')
 from interface.menuClass import *
 from interface.usersClass import *
-from models.CRUD import *
-import json
-
+from models.module_CRUD import *
 
 if __name__ == '__main__':
 
@@ -49,14 +48,16 @@ if __name__ == '__main__':
             "age": 20
     }
 
-    #print(createUser(**usuario3))
+    path = '../database/database.json'
 
-    #print(createUser(**usuario))
+    print(createUser(path, **usuario3))
 
-    #print(findUser('zDarkness'))
+    print(createUser(path, **usuario))
 
-    #print(deleteUser('zDarkness'))
+    print(readUser(path, 'zDarkness'))
 
-    #print(updateUser(**usuario2))
+    print(deleteUser(path, 'zDarkness'))
 
-    #print(deleteUser('zDarkness'))
+    print(updateUser(path, **usuario2))
+
+    print(deleteUser(path, 'zDarkness'))

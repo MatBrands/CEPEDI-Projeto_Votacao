@@ -1,8 +1,7 @@
 import json
 
-
-def createUser(**user):
-    with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", encoding='utf-8') as file:
+def createUser(path, **user):
+    with open(path, encoding='utf-8') as file:
         data = json.load(file)
 
     for key, value in list(data.items()):
@@ -26,24 +25,12 @@ def createUser(**user):
 
     data.update(u)
 
-    with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", "w") as file2:
+    with open(path, "w") as file2:
         json.dump(data, file2, indent=4)
     return True
 
-
-def findUser(user):
-    with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", encoding='utf-8') as file:
-        data = json.load(file)
-
-    for key, value in list(data.items()):
-        if key == user:
-            return value
-
-    return False
-
-
-def updateUser(**new_data):
-    with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", encoding='utf-8') as file:
+def updateUser(path, **new_data):
+    with open(path, encoding='utf-8') as file:
         data = json.load(file)
     find = False
 
@@ -70,16 +57,25 @@ def updateUser(**new_data):
 
         data.update(u)
 
-        with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", "w") as file2:
+        with open(path, "w") as file2:
             json.dump(data, file2, indent=4)
     else:
         return False
 
     return True
 
+def readUser(path, user):
+    with open(path, encoding='utf-8') as file:
+        data = json.load(file)
 
-def deleteUser(user):
-    with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", encoding='utf-8') as file:
+    for key, value in list(data.items()):
+        if key == user:
+            return value
+
+    return False
+
+def deleteUser(path, user):
+    with open(path, encoding='utf-8') as file:
         data = json.load(file)
         find = False
 
@@ -89,7 +85,7 @@ def deleteUser(user):
             find = True
 
     if find:
-        with open("/home/luca/Documentos/Projeto_votacao/votacao/database/database.json", "w") as file2:
+        with open(path, "w") as file2:
             json.dump(data, file2, indent=4)
     else:
         return False
