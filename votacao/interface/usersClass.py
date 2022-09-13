@@ -1,8 +1,8 @@
 class Eleitor:
-    def __init__(self, id: int, user: str, password: str, name: str):
+    def __init__(self, user: str, password: str, name: str, age: int):
         self.setUser(user)
         self.setPassword(password)
-        self.setId(id)
+        self.setAge(age)
         self.setName(name)
         self.__votou__ = False
 
@@ -18,11 +18,11 @@ class Eleitor:
     def getName(self):
         return self.name
     
-    def setId(self, id):
-        self.__id__ = id
+    def setAge(self, age):
+        self.age = age
 
-    def getId(self):
-        return self.__id__
+    def getAge(self):
+        return self.id
 
     def getVotou(self):
         return self.__votou__
@@ -39,8 +39,8 @@ class Eleitor:
         self.__votou__ = True
 
 class Candidato(Eleitor):
-    def __init__(self, id: int, user: str, password: str, name: str, proposta: str):
-        super().__init__(id, user, password, name)
+    def __init__(self, user: str, password: str, name: str, proposta: str, age: int):
+        super().__init__(user, password, name, age)
         self.setProposta(proposta)
         self.__contagem_voto__ = 0
 

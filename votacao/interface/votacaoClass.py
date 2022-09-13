@@ -1,6 +1,5 @@
 from usersClass import *
 
-
 class Votacao:
     def __init__(self, organizador):
         self.organizador = organizador
@@ -28,8 +27,8 @@ class Votacao:
     def iniciarVotacao(self):
         self.__votacaoDisponivel__ = False
 
-    def verificaOrganizador(self, id):
-        return self.organizador.getId() == id
+    def verificaOrganizador(self, user):
+        return self.organizador.getUser() == user
 
     def votar (self, id_candidato, eleitor):
         if not eleitor.getVotou():
@@ -38,8 +37,8 @@ class Votacao:
         else:
             return
 
-    def encerrarVotacao(self, id):
-        if not self.__votacaoDisponivel__ and self.verificaOrganizador(id):
+    def encerrarVotacao(self, user):
+        if not self.__votacaoDisponivel__ and self.verificaOrganizador(user):
             contagemDoVencedor = 0;       
             valor_empate = -1
 
