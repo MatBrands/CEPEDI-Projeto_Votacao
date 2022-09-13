@@ -1,4 +1,5 @@
 import sys
+import os
 sys.path.insert(1, '../')
 from interface.menuClass import *
 
