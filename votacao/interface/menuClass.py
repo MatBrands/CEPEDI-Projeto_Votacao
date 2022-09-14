@@ -38,7 +38,9 @@ class Menu:
 
         while not self.acess:
             os.system("clear")
-            print (self.title)
+            
+            if self.title != '':
+                print (self.title)
             [print(item) for item in menu_atual]
 
             with keyboard.Listener( on_press=self.on_press, on_release=self.on_release) as listener: 
@@ -48,5 +50,8 @@ class Menu:
             for i in range (self.elementos):
                 if self.option%self.elementos == i:
                     menu_atual[i] = colored(menu_atual[i], 'green')
+
+        input()
+        os.system("clear")
 
         return self.option%self.elementos

@@ -4,15 +4,14 @@ def createUser(path, **user):
     with open(path, encoding='utf-8') as file:
         data = json.load(file)
 
-    for _, value in list(data.items()):
-        if value['user'] == user['user']:
+    for key, _ in list(data.items()):
+        if key == user['user']:
             return False
 
     u = { user['user']:{ } }
 
-    if user['role'] == '0':
+    if user['role'] == 0:
         usr = {
-        "email": user['email'],
         "password": user['password'],
         "name": user['name'],
         "age": user['age'],
@@ -21,7 +20,6 @@ def createUser(path, **user):
 
     else:
         usr = {
-        "email": user['email'],
         "password": user['password'],
         "name": user['name'],
         "age": user['age'],
@@ -31,7 +29,7 @@ def createUser(path, **user):
 
     u[user['user']].update(usr)
 
-    data.update(user)
+    data.update(u)
 
     with open(path, "w") as file:
         json.dump(data, file, indent=4)
@@ -45,7 +43,6 @@ def updateUser(path, **new_data):
     for key, _ in list(data.items()):
         if key == new_data['user']:
             data.pop(key)
-            # data.update(new_data)
             find = True
 
     if find:
@@ -54,9 +51,8 @@ def updateUser(path, **new_data):
             }
         }
 
-        if new_data['role'] == '0':
+        if new_data['role'] == 0:
             usr = {
-            "email": new_data['email'],
             "password": new_data['password'],
             "name": new_data['name'],
             "age": new_data['age'],
@@ -65,7 +61,6 @@ def updateUser(path, **new_data):
 
         else:
             usr = {
-            "email": new_data['email'],
             "password": new_data['password'],
             "name": new_data['name'],
             "age": new_data['age'],
