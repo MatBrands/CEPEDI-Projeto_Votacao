@@ -8,20 +8,15 @@ class Menu:
 
     def on_press(self, key):
         if (str(key) == 'Key.up'):
-            self.option+=1
-        elif (str(key) == 'Key.down'):
             self.option-=1
+        elif (str(key) == 'Key.down'):
+            self.option+=1
         elif (str(key) == 'Key.enter'):
             self.acess = True
 
         return False
 
     def on_release(self, key):
-        if (str(key) == 'Key.up'):
-            self.option+=1
-        elif (str(key) == 'Key.down'):
-            self.option-=1
-
         return False
 
     def setTitulo(self, *args):
@@ -48,10 +43,10 @@ class Menu:
                 menu_atual = self.items.copy()
 
             for i in range (self.elementos):
-                if self.option%self.elementos == i:
+                if self.option%abs(self.elementos) == i:
                     menu_atual[i] = colored(menu_atual[i], 'green')
 
         input()
         os.system("clear")
 
-        return self.option%self.elementos
+        return self.option%abs(self.elementos)
