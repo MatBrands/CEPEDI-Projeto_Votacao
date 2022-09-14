@@ -31,8 +31,8 @@ def createUser(path, **user):
 
     data.update(u)
 
-    with open(path, "w") as file:
-        json.dump(data, file, indent=4)
+    with open(path, "w", encoding='utf-8') as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
     return True
 
 def updateUser(path, **new_data):
@@ -72,8 +72,8 @@ def updateUser(path, **new_data):
 
         data.update(u)
 
-        with open(path, "w") as file:
-            json.dump(data, file, indent=4)
+        with open(path, "w", encoding='utf-8') as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
     else:
         return False
 
@@ -100,8 +100,8 @@ def deleteUser(path, user):
             find = True
 
     if find:
-        with open(path, "w") as file:
-            json.dump(data, file, indent=4)
+        with open(path, "w", encoding='utf-8') as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
     else:
         return False
     return True

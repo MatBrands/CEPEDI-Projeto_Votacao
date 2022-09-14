@@ -1,2 +1,7 @@
 termcolor
 pynput
+hashlib
+getpass
+pickle
+json
+os

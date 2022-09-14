@@ -1,5 +1,3 @@
-from interface.usersClass import *
-
 class Votacao:
     def __init__(self, organizador):
         self.organizador = organizador

@@ -27,12 +27,19 @@ Esse projeto utiliza algumas bibliotecas:
 
 No desenvolvimento foi utilizado o [Python](https://www.python.org/) v3.10.6.
 
-Para instalar as dependencias acesse o diretório do ambiente, ative-o e instale:
+Para instalar as dependencias recomenda-se o uso de um ambiente virtual, assim acesse o diretório do ambiente, ative-o e instale:
 
 ```sh
-cd ENV
-bin/activate
-pip install -r ./dependencies/requirements.txt
+pip install virtualenv
+virtualenv env
+source env/bin/activate
+pip freeze > ./tools/requirements.txt
+```
+
+Para desativar utilize:
+
+```sh
+deactivate
 ```
 
 Então apenas chame a main normalmente

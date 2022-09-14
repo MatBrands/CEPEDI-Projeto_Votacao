@@ -38,7 +38,7 @@ class Menu:
                     else:
                         menu_atual[i] = colored(menu_atual[i], 'green')
 
-            if not self.title:
+            if self.title:
                 print (self.title)
                 
             [print(item) for item in menu_atual]
