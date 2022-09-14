@@ -16,9 +16,6 @@ class Menu:
 
         return False
 
-    def on_release(self, key):
-        return False
-
     def setTitulo(self, *args):
         self.title = ''.join(*args)
 
@@ -34,19 +31,23 @@ class Menu:
         while not self.acess:
             os.system("clear")
             
-            if self.title != '':
+            for i in range (self.elementos):
+                if self.option%self.elementos == i:
+                    if menu_atual[i] in ['Sair', 'Retornar']:
+                        menu_atual[i] = colored(menu_atual[i], 'red')
+                    else:
+                        menu_atual[i] = colored(menu_atual[i], 'green')
+
+            if not self.title:
                 print (self.title)
+                
             [print(item) for item in menu_atual]
 
-            with keyboard.Listener( on_press=self.on_press, on_release=self.on_release) as listener: 
+            with keyboard.Listener(on_press=self.on_press) as listener: 
                 listener.join()
                 menu_atual = self.items.copy()
-
-            for i in range (self.elementos):
-                if self.option%abs(self.elementos) == i:
-                    menu_atual[i] = colored(menu_atual[i], 'green')
 
         input()
         os.system("clear")
 
-        return self.option%abs(self.elementos)
+        return self.option%self.elementos
