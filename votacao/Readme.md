@@ -36,4 +36,4 @@ Para melhor controle será dividido o desenvolvimento em fragmentos que serão i
 | Manipular Json | Luca Sacramento | Conclusão
 | Criação do CRUD | Luca Sacramento | Conclusão
 | Construção de módulos | Matheus Brandão | Conclusão
-| Otimização | --- | Pendente
+| Otimização | Matheus/Luca | Conclusão
