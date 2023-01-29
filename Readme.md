@@ -98,7 +98,7 @@ Para os itens de texto, será necessário apenas digitar os valores e dar 'Enter
 Projeto desenvolvido com a colaboração dos Devs:
 
 - [Luca Sacramento](https://github.com/lucasao98/)
-- [Matheus Brandão](https://github.com/MatBrands)
+- [Matheus Miranda Brandão](https://github.com/MatBrands)
 
 ## Organização do projeto
 ...
