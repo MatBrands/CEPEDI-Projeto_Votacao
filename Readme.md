@@ -19,6 +19,7 @@ Esse projeto utiliza algumas bibliotecas:
 - hashlib - Criptografias do tipo hash para senhas
 - json - Manipulação de jsons
 - os - Limpar tela e excluir arquivos
+- platform - Identificar o sistema operacional
 - pickle - Importar objetos inteiros
 - pynput - Obter evento de keyboard
 - termcolor - Modificar a coloração do console
