@@ -1,66 +1,106 @@
-# Projeto Votação em Python
+# Projeto Votação
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 Este projeto tem como objetivo a conclusão da parte introdutória do curso Python Dados e Web cedido pela CEPEDI.
-Ele consiste num sistema de gerenciamento de votação, onde temos diferentes níveis de acesso (Criador, Candidato e Votante). Apenas o criador da votação poderá encerrar e computar os votos, cada pessoa poderá votar apenas 1 única vez.
+Ele consiste num sistema de gerenciamento de votação, onde temos diferentes níveis de acesso (Candidato e Votante). Apenas o criador da votação poderá encerrar e computar os votos, cada pessoa poderá votar apenas 1 única vez.
 
 Conteúdo:
 - Tecnologias
 - Instalação
 - Instruções
 - Autores
+- Organização do projeto
 - License
 
 ## Tecnologias
-
 Esse projeto utiliza algumas bibliotecas:
 
-- [termcolor] - Modificar a coloração do console
-- [pynput] - Obter evento de keyboard
+- [getpass] - Inputs escondidos para senhas
+- [hashlib] - Criptografias do tipo hash para senhas
 - [json] - Manipulação de jsons
-- [hashlib] - Utilização de criptografias do tipo hash
-- [getpass] - Utilização de inputs escondidos para senhas
-- [pickle] - Importar objetos inteiros
 - [os] - Limpar tela e excluir arquivos
+- [pickle] - Importar objetos inteiros
+- [pynput] - Obter evento de keyboard
+- [termcolor] - Modificar a coloração do console
 
 ## Instalação
+Foi utilizado o [Python](https://www.python.org/) v3.10.9.
 
-No desenvolvimento foi utilizado o [Python](https://www.python.org/) v3.10.6.
+### Conda
+No desenvolvimento foi utilizado o gerenciador de pacotes e ambientes [Conda](https://conda.io/). Portanto para prosseguir necessita-se de sua [instalação](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Para instalar as dependencias recomenda-se o uso de um ambiente virtual, assim acesse o diretório do ambiente, ative-o e instale:
-
+- Navegar até a pasta de destino
 ```sh
-pip install virtualenv
-virtualenv env
-source env/bin/activate
-pip freeze > ./tools/requirements.txt
+cd utils
 ```
 
-Para desativar utilize:
+- Instalar dependências
+```sh
+conda env create environment.yml
+```
 
+- Ativar
+```sh
+conda activate voting_system_venv
+```
+
+- Desativar
+```sh
+conda deactivate
+```
+
+### Requirements
+Pode-se utilizar o arquivo requirements.txt para criar o ambiente virtual.
+
+- Criar ambiente virtual
+```sh
+python -m venv voting_system_venv
+```
+
+- Ativar
+```sh
+source ./voting_system_venv/bin/activate
+```
+
+- Navegar até a pasta de destino
+```sh
+cd utils
+```
+
+- Instalar dependências
+```sh
+pip install -r requirements.txt
+```
+
+- Desativar
 ```sh
 deactivate
 ```
 
-Então apenas chame a main normalmente
+### Inicializar projeto
+- Navegar até a pasta de destino
+```sh
+cd voting_system
+```
 
+- Execute o programa
 ```sh
 python __init__.py
 ```
 
 ## Instruções
-
 O projeto foi desenvolvido de maneira interativa pelo terminal, ou seja, o usuário vai interagir diretamente com o terminal.
-Para interagir com os menus é necessário utilizar as Setas para percorrer os itens e o Enter para acessar.
-Para os itens de texto, será necessário apenas digitar os valores e dar Enter.
+Para interagir com os menus é necessário utilizar as 'Setas' para percorrer os itens e o 'Enter' para acessar.
+Para os itens de texto, será necessário apenas digitar os valores e dar 'Enter'.
 
 ## Autores
-
 Projeto desenvolvido com a colaboração dos Devs:
 
 - [Luca Sacramento](https://github.com/lucasao98/)
 - [Matheus Brandão](https://github.com/MatBrands)
 
-## License
+## Organização do projeto
+...
 
+## License
 MIT

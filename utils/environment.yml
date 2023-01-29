@@ -1,0 +1,11 @@
+name: voting_system_venv
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - termcolor
+  - pynput
+  - hashlib
+  - getpass
+  - pickle
