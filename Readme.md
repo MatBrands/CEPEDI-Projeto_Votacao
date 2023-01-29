@@ -37,7 +37,7 @@ cd utils
 
 - Instalar dependências
 ```sh
-conda env create environment.yml
+conda env create -f environment.yml
 ```
 
 - Ativar
