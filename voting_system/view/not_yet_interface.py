@@ -3,10 +3,10 @@ import hashlib
 import getpass
 import pickle
 import os
-from interface.menuClass import *
-from interface.usersClass import *
-from interface.votacaoClass import *
-from models.module_CRUD import *
+from voting_system.model.Menu import *
+from model.usersClass import *
+from model.votacaoClass import *
+from voting_system.model.Register import *
 
 # Const
 path = './database/database.json'
