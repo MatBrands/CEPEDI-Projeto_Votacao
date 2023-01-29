@@ -15,13 +15,13 @@ Conteúdo:
 ## Tecnologias
 Esse projeto utiliza algumas bibliotecas:
 
-- [getpass] - Inputs escondidos para senhas
-- [hashlib] - Criptografias do tipo hash para senhas
-- [json] - Manipulação de jsons
-- [os] - Limpar tela e excluir arquivos
-- [pickle] - Importar objetos inteiros
-- [pynput] - Obter evento de keyboard
-- [termcolor] - Modificar a coloração do console
+- getpass - Inputs escondidos para senhas
+- hashlib - Criptografias do tipo hash para senhas
+- json - Manipulação de jsons
+- os - Limpar tela e excluir arquivos
+- pickle - Importar objetos inteiros
+- pynput - Obter evento de keyboard
+- termcolor - Modificar a coloração do console
 
 ## Instalação
 Foi utilizado o [Python](https://www.python.org/) v3.10.9.
