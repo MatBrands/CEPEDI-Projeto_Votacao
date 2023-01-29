@@ -6,6 +6,3 @@ dependencies:
   - pip
   - termcolor
   - pynput
-  - hashlib
-  - getpass
-  - pickle

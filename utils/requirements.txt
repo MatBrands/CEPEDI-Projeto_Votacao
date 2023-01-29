@@ -1,5 +1,2 @@
 termcolor
 pynput
-hashlib
-getpass
-pickle
