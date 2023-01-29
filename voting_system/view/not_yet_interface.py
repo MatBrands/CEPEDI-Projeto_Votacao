@@ -4,8 +4,8 @@ import getpass
 import pickle
 import os
 from voting_system.model.Menu import *
-from model.usersClass import *
-from model.votacaoClass import *
+from voting_system.model.Users import *
+from voting_system.model.Voting import *
 from voting_system.model.Register import *
 
 # Const

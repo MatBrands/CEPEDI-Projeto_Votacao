@@ -8,7 +8,7 @@ class Register:
             with open(path, 'w', encoding='utf-8') as file:
                 json.dump({}, file, indent=4, ensure_ascii=False)
 
-    def createUser(self, **user_data):
+    def createUser(self, **user_data) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -26,8 +26,8 @@ class Register:
             }
         }
 
-        if user_data['role'] == 1:
-            new_user[id]['proposta'] = user_data['proposta']
+        if user_data['role']:
+            new_user[id]['proposal'] = user_data['proposal']
 
         data.update(new_user)
 
@@ -35,7 +35,7 @@ class Register:
             json.dump(data, file, indent=4, ensure_ascii=False)
         return True
 
-    def updateUser(self, **user_data):
+    def updateUser(self, **user_data) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -53,8 +53,8 @@ class Register:
             }
         }
 
-        if user_data['role'] == 1:
-            new_user[id]['proposta'] = user_data['proposta']
+        if user_data['role']:
+            new_user[id]['proposal'] = user_data['proposal']
 
         data.update(new_user)
 
@@ -62,7 +62,7 @@ class Register:
             json.dump(data, file, indent=4, ensure_ascii=False)
         return True
 
-    def readUser(self, id_user):
+    def readUser(self, id_user) -> dict | bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -71,7 +71,7 @@ class Register:
         else:
             return False
 
-    def deleteUser(self, id_user):
+    def deleteUser(self, id_user) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
