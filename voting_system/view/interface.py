@@ -341,15 +341,15 @@ def register_menu(voting: Voting) -> None:
     if len(candidatos_disp) > 0:
         title.append("Temos disponíveis esses candidatos.")
         item = [f'Candidato: {item[1]}\tProposta: {item[2]}' for item in candidatos_disp]
-        selecionado = set_menu(title, item)
+        selected = set_menu(title, item)
     else:
         print(''.join(title))
         input("Não temos disponíveis nenhum candidato.\n")
         return
 
-    voting.register_candidate(candidatos_disp[selecionado][0])
+    voting.register_candidate(candidatos_disp[selected][0])
     with open (PICKLE_PATH, "wb") as file:
         pickle.dump(voting, file)
     
     clear()
-    input(f'Candidato {candidatos_disp[selecionado][1]} cadastrado no sistema com sucesso.')
+    input(f'Candidato {candidatos_disp[selected][1]} cadastrado no sistema com sucesso.')
