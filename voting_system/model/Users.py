@@ -12,6 +12,6 @@ class Voter:
         return (passwd == self.__password__)
 
 class Candidate(Voter):
-    def __init__(self, user: str, password: str, name: str, age: int, proposta: str):
+    def __init__(self, user: str, password: str, name: str, age: int, proposal: str):
         super().__init__(user, password, name, age)
-        self.proposta = proposta
+        self.proposal = proposal

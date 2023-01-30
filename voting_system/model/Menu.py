@@ -21,14 +21,14 @@ class Menu:
 
         return False
 
-    def setTitle(self, *args) -> None:
+    def set_title(self, *args) -> None:
         self.title = ''.join(*args)
 
-    def setItems(self, *args) -> None:
+    def set_items(self, *args) -> None:
         self.elements = len(*args)
         self.items = list(*args)
 
-    def startMenu(self) -> int:
+    def start_menu(self) -> int:
         self.option = 0
         self.acess = False
         current_menu = self.items.copy()

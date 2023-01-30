@@ -1,6 +1,6 @@
-class Votacao:
-    def __init__(self, organizer: str) -> None:
-        self.organizer = organizer
+class Voting:
+    def __init__(self, owner: str) -> None:
+        self.owner = owner
         self.candidates = []
         self.__wishes__ = []
         self.already_voted = []
@@ -27,7 +27,7 @@ class Votacao:
         self.__voting_status__ = False
 
     def is_owner(self, user: str) -> bool:
-        return self.organizer == user
+        return self.owner == user
 
     def vote(self, id_candidate: str, id_voter: str) -> bool:
         if id_voter in self.already_voted:

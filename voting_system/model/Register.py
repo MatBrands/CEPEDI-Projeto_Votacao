@@ -8,7 +8,7 @@ class Register:
             with open(path, 'w', encoding='utf-8') as file:
                 json.dump({}, file, indent=4, ensure_ascii=False)
 
-    def createUser(self, **user_data) -> bool:
+    def create_user(self, **user_data) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -35,7 +35,7 @@ class Register:
             json.dump(data, file, indent=4, ensure_ascii=False)
         return True
 
-    def updateUser(self, **user_data) -> bool:
+    def update_user(self, **user_data) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -62,7 +62,7 @@ class Register:
             json.dump(data, file, indent=4, ensure_ascii=False)
         return True
 
-    def readUser(self, id_user) -> dict | bool:
+    def read_user(self, id_user: str):
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
@@ -71,7 +71,7 @@ class Register:
         else:
             return False
 
-    def deleteUser(self, id_user) -> bool:
+    def delete_user(self, id_user: str) -> bool:
         with open(self.path, encoding='utf-8') as file:
             data = json.load(file)
 
