@@ -302,9 +302,9 @@ def owner_voting(user, voting: Voting) -> None:
 def close_voting_menu(user, voting: Voting) -> None:
     if len(voting.already_voted) > 1:
         if voting.close_voting(user.user):
-            vencedor, votos = voting.winner
-            vencedor = crud.read_user(vencedor)
-            input(f'Parabens {vencedor["name"]} venceu com {votos} voto(s) !')
+            winner, vote_count = voting.winner
+            winner = crud.read_user(winner)
+            input(f'Parabens {winner["name"]} venceu com {vote_count} voto(s) !')
             os.remove(PICKLE_PATH)
             exit()
         else:
