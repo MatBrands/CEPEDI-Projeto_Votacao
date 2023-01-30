@@ -64,19 +64,39 @@ def login_menu() -> bool:
             continue
     elif option == 1:
         user = {}
-        user['user'] = input('Digite um nome de usuário: \n')
-        user['password'] = sha256(getpass('Digite uma senha: ').encode('utf-8')).hexdigest()
-        user['name'] = input('Digite seu nome: ')
+        
+        user_ = input('Digite um nome de usuário: \n')
+        if not user_:
+            input("Entrada inválida !\n")
+            return True
+        user['user'] = user_
+        
+        password = getpass('Digite uma senha: ')
+        if not password:
+            input("Entrada inválida !\n")
+            return True
+        user['password'] = sha256(password.encode('utf-8')).hexdigest()
+        
+        name = input('Digite seu nome: ')
+        if not name:
+            input("Entrada inválida !\n")
+            return True
+        user['name'] = name
+        
         age = input('Digite sua idade: ')
         if age.isnumeric():
             user['age'] = int(age)
         else:
             input("Entrada inválida !\n")
-            return False
+            return True
         
         user['role'] = set_menu(items = ['Eleitor', 'Candidato'])
         if user['role']:
-            user['proposal'] = input('Digite sua proposta: ')
+            proposal = input('Digite sua proposta: ')
+            if not proposal:
+                input("Entrada inválida !\n")
+                return True
+            user['proposal'] = proposal
         if crud.create_user(**user):
             input('Usuário criado com sucesso !\n')
         else:
@@ -96,14 +116,14 @@ def user_menu(user) -> bool:
         while voting_menu(user):
             continue
     elif option == 1:
-        print (f'Usuário: {user.user}')
-        print (f'Nome: {user.name}')
-        print (f'Idade: {user.age}')
+        print(f'Usuário: {user.user}')
+        print(f'Nome: {user.name}')
+        print(f'Idade: {user.age}')
     
         if isinstance(user, Candidate):
-            print (f'Proposta: {user.proposal}')
+            print(f'Proposta: {user.proposal}')
     
-        input ('Para prosseguir digite alguma tecla:\n')
+        input('Para prosseguir digite alguma tecla:\n')
 
         edit_menu(user)
         
@@ -121,7 +141,7 @@ def edit_menu(user) -> None:
         
     option = set_menu(items=items)
     
-    print ("Caso não queira modificar o campo, deixar em branco.\n")
+    print("Caso não queira modificar o campo, deixar em branco.\n")
     
     if option == 0:
         user = input("Digite um nome de usuário: ")
@@ -288,7 +308,7 @@ def close_voting_menu(user, voting: Voting) -> None:
             os.remove(PICKLE_PATH)
             exit()
         else:
-            if voting.getEmpate():
+            if voting.draw():
                 input('Votação encerrada, houve um empate')
             else:
                 input('Erro na votação')
