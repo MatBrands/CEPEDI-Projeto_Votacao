@@ -109,17 +109,17 @@ Projeto desenvolvido com a colaboração dos Devs:
 │   │   ├── environment.yml
 │   │   └── requirements.txt
 │   └── voting_system
-│   │   ├── Readme.md
-│   │   ├── __init__.py
-│   │   ├── controller
-│   │   │   └── database.json
-│   │   ├── model
-│   │   │   ├── Menu.py
-│   │   │   ├── Register.py
-│   │   │   ├── Users.py
-│   │   │   └── Voting.py
-│   │   └── view
-│   │       └── interface.py
+│       ├── Readme.md
+│       ├── __init__.py
+│       ├── controller
+│       │   └── database.json
+│       ├── model
+│       │   ├── Menu.py
+│       │   ├── Register.py
+│       │   ├── Users.py
+│       │   └── Voting.py
+│       └── view
+│           └── interface.py
 ```
 
 ## License
