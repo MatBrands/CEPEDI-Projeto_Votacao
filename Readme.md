@@ -103,23 +103,23 @@ Projeto desenvolvido com a colaboração dos Devs:
 ## Organização do projeto
 ```sh
 ├── CEPEDI-Projeto_Votacao
-|   ├── License
-|   ├── Readme.md
-|   ├── utils
-|   │   ├── environment.yml
-|   │   └── requirements.txt
-|   └── voting_system
-|   |   ├── Readme.md
-|   |   ├── __init__.py
-|   |   ├── controller
-|   |   │   └── database.json
-|   |   ├── model
-|   |   │   ├── Menu.py
-|   |   │   ├── Register.py
-|   |   │   ├── Users.py
-|   |   │   └── Voting.py
-|   |   └── view
-|   |       └── interface.py
+│   ├── License
+│   ├── Readme.md
+│   ├── utils
+│   │   ├── environment.yml
+│   │   └── requirements.txt
+│   └── voting_system
+│   │   ├── Readme.md
+│   │   ├── __init__.py
+│   │   ├── controller
+│   │   │   └── database.json
+│   │   ├── model
+│   │   │   ├── Menu.py
+│   │   │   ├── Register.py
+│   │   │   ├── Users.py
+│   │   │   └── Voting.py
+│   │   └── view
+│   │       └── interface.py
 ```
 
 ## License
